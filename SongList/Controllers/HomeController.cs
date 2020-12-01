@@ -1,18 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SongList.Models;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
 
 namespace SongList.Controllers
 {
     public class HomeController : Controller
     {
+        private SongContext context { get; set; }
+        public HomeController(SongContext ctx)
+        {
+            context = ctx;
+        }
+
+
         public IActionResult Index()
         {
-            return View();
+            //Retrieve all songs 
+            var songs = context.Songs.OrderBy(m => m.year).ToList();
+            return View(songs);
         }
     }
 }
