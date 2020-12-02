@@ -17,7 +17,7 @@ namespace SongList.Controllers
         public IActionResult Index()
         {
             //Retrieve all songs 
-            var songs = context.Songs.OrderBy(m => m.year).ToList();
+            var songs = context.Songs.Include(s => s.Genre).OrderBy(m => m.year).ToList();
             return View(songs);
         }
     }

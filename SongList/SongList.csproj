@@ -5,6 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20201202100650_genretable.cs" />
+    <Compile Remove="Migrations\20201202100650_genretable.Designer.cs" />
+    <Compile Remove="Migrations\20201202101151_genre-table.cs" />
+    <Compile Remove="Migrations\20201202101151_genre-table.Designer.cs" />
+    <Compile Remove="Migrations\20201202101541_genre.cs" />
+    <Compile Remove="Migrations\20201202101541_genre.Designer.cs" />
+    <Compile Remove="Migrations\20201202101933_20.cs" />
+    <Compile Remove="Migrations\20201202101933_20.Designer.cs" />
+    <Compile Remove="Migrations\20201202104017_second.cs" />
+    <Compile Remove="Migrations\20201202104017_second.Designer.cs" />
+    <Compile Remove="Migrations\20201202105307_second.cs" />
+    <Compile Remove="Migrations\20201202105307_second.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
       <PrivateAssets>all</PrivateAssets>

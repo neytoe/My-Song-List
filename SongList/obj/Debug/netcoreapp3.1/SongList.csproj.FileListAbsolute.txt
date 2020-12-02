@@ -72,3 +72,5 @@ C:\Users\hp\source\repos\SongList\SongList\obj\Debug\netcoreapp3.1\SongList.dll
 C:\Users\hp\source\repos\SongList\SongList\obj\Debug\netcoreapp3.1\SongList.pdb
 C:\Users\hp\source\repos\SongList\SongList\obj\Debug\netcoreapp3.1\SongList.genruntimeconfig.cache
 C:\Users\hp\source\repos\SongList\SongList\obj\Debug\netcoreapp3.1\SongList.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\SongList\SongList\obj\Debug\netcoreapp3.1\Razor\Views\Song\Delete.cshtml.g.cs
+C:\Users\hp\source\repos\SongList\SongList\obj\Debug\netcoreapp3.1\Razor\Views\Song\Edit.cshtml.g.cs

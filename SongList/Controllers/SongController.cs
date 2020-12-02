@@ -60,7 +60,7 @@ namespace SongList.Controllers
             return View(Song);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public IActionResult Delete(Song song)
         {
             context.Songs.Remove(song);
