@@ -15,7 +15,7 @@ namespace SongList.Controllers
             context = ctx;
         }
         [HttpGet]
-        public IActionResult Add(Song song)
+        public IActionResult Add()
         {
             ViewBag.Action = "Add";
             ViewBag.Genres = context.Genres.OrderBy(m => m.Name).ToList();

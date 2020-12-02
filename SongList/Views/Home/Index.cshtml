@@ -22,8 +22,8 @@
                     <td>@song.year</td>
                     <td>@song.Rating</td>
                     <td>@song.Genre.Name</td>
-                    <td><a asp-controller="Song" asp-action="Edit" asp-route-id="@song.SongID">Edit</a></td>
-                    <td><a asp-controller="Song" asp-action="Delete" asp-route-id="@song.SongID">Delete</a></td>
+                    <td><a asp-controller="Song" asp-action="Edit" asp-route-id="@song.SongID" asp-route-slug="@song.Slug">Edit</a></td>
+                    <td><a asp-controller="Song" asp-action="Delete" asp-route-id="@song.SongID" asp-route-slug="@song.Slug">Delete</a></td>
                 </tr>
             }
         </tbody>

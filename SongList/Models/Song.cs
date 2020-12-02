@@ -28,6 +28,6 @@ namespace SongList.Models
         [Required(ErrorMessage = "please enter genre")]
         public string GenreId { get; set; }
 
-
+        public string Slug => Name?.Replace(' ', '-').ToLower() + '-' + year?.ToString();
     }
 }
